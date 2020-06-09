@@ -48,7 +48,7 @@ User.init(
         validate: {
             // this means the password must be at least four characters long
             len: [4]
-        }
+        }   
         }
     },
     {
@@ -66,7 +66,7 @@ User.init(
                 return updatedUserData;
             }
         },
-    
+
         // pass in our imported sequelize connection (the direct connection to our database)
         sequelize,
         // don't automatically create createdAt/updatedAt timestamp fields
